@@ -1,12 +1,17 @@
 //Increment values of array by 2
 
-let inputArray = [1,2,3,'hello',4,5];
+let inputArray = [1,2,3,4,5];
 
-const incrementor = (array) =>{
-    for(i=0;i<array.length;i++){
-        (isNaN(array[i]))?null:array[i]=array[i]+2;
-    }
-    return array;
+/*
+const incrementor = (array) => {
+    let outArray = array.map((element) => {(isNaN(element))?null:element + 2})
+    console.log(outArray);
 }
+*/
+const incrementor = (array) => {
+    let outArray = array.map(element => element + 2)
+    console.log(outArray);
+}
+
 incrementor(inputArray);
-console.log(inputArray);
+
